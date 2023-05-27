@@ -17,7 +17,7 @@ redir-port: 7892     # Redir 端口
 mixed-port: 7893     # 混合端口
 allow-lan: false     # 允许局域网连接
 bind-address: "*"    # 地址绑定
-mode: rule           # 规则模式
+mode: Rule           # 规则模式
 log-level: silent    # 日志级别
 ipv6: false          # IPV6开关
 external-controller: 0.0.0.0:9090
