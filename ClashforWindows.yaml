@@ -20,7 +20,7 @@ bind-address: "*"    # 地址绑定
 mode: rule           # 规则模式
 log-level: info      # 日志级别
 ipv6: false          # IPV6开关
-external-controller: 127.0.0.1:9090
+#external-controller: 127.0.0.1:9090
 
 dns:
   enable: true       # 不使用系统 DNS
@@ -76,7 +76,7 @@ proxy-providers:
 proxies: null
 proxy-groups:
 #分流分组
-  - {name: 🚀 手动切换, <<: *a2,exclude:"官网|渠道|永久"}
+  - {name: 🚀 手动切换, <<: *a2}
   - {name: 🌏 全球加速, <<: *a3}
   - {name: 🍎 苹果服务, <<: *a3}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点]}
