@@ -2,9 +2,7 @@
 # @ConfigName        修改自墨鱼自用Clash配置文件
 # @Author            @ddgksf2013
 # @TgChannel         𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟐𝟏
-# @WechatID          公众号墨鱼手记
-# @Feedback          💡请通过邮件反馈问题[其它方式一概无视]：𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 💡
-# @UpdateTime        2023/05/26 18:30 UTC/GMT +8
+# @UpdateTime        2023/06/02 17:48 UTC/GMT +8
 # @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点等等   
 # @ClashDownload     https://github.com/Fndroid/clash_for_windows_pkg/releases
 # @Thanks            @blackmatrix7, @Fndroid, @Anti, @ddgksf2013
@@ -69,7 +67,8 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *a1
-    url: https://sub.xeton.dev/sub?target=clash&url=[Subscribe Link here]&list=true&udp=false 
+    url: https://sub.xeton.dev/sub?target=clash&url=[Subscribe Link here]&list=true&udp=false&exclude=%E6%B8%A0%E9%81%93%7C%E5%AE%98%E7%BD%91%7C%E6%BC%8F%E6%B4%9E%7C%E6%B0%B8%E4%B9%85%7CIPV6
+    # 上面url exclude=渠道|官网|永久|漏洞|IPV6 经过了URLEncode(https://www.urlencoder.org/) 处理 
     path: ./proxy_providers/tmp.yaml
 
 
